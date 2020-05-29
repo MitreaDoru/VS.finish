@@ -1,4 +1,4 @@
-api_key = 'AIzaSyCHcKisWxFL69G6IkVIcCDCfgiGTGiOuDE'
+api_key = ''
 from apiclient.discovery import build
 import pytube, os, time, keyboard 
 from os import path
@@ -24,8 +24,8 @@ def get_title_playlist (my_id, playlist_id):
         if items[x]['id'] == playlist_id:
             title = items[x]['snippet']['title']
     return title
-videos = get_playlist_video('UClnQ7xLfotiMPk-o42pB6IA', 'PLWal2U3YZF7uRP3lZL01CHSXg9B5JCiwg')
-title = get_title_playlist('UClnQ7xLfotiMPk-o42pB6IA', 'PLWal2U3YZF7uRP3lZL01CHSXg9B5JCiwg') 
+videos = get_playlist_video('ch_id', 'playlist_id')
+title = get_title_playlist('ch_id', 'playlist_id') 
 y = 0
 z = 0
 video_id_store = []
